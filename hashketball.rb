@@ -210,7 +210,7 @@ def winning_team
     end
   }
   
-  team
+  puts team
 end
 
 puts winning_team
