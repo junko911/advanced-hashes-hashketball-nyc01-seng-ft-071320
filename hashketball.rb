@@ -199,10 +199,18 @@ def winning_team
   team = ""
   
   game_hash.each_value { |team|
-    points = team.inject { |sum, 
+  
+    points = team.inject { |sum, player|
+      sum + player[:points]    
+    }
     
-      
+    if points > biggest
+      biggest = points
+      team = team[:team_name]
+    end
   }
+  
+  team
 end
 
 
