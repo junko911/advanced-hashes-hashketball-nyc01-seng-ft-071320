@@ -200,7 +200,7 @@ def winning_team
   
   game_hash.each_value { |team|
   
-    points = team.inject { |sum, player|
+    points = team[:players].inject { |sum, player|
       sum + player[:points]    
     }
     
