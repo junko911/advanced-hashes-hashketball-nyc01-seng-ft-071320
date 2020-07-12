@@ -198,6 +198,8 @@ def player_with_longest_name
   home_longest = game_hash[:home][players].max_by { |player|
     player[:player_name].length
   }
+  
+  puts home_longest
 end
 
 # binding.pry
