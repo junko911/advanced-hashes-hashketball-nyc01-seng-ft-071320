@@ -195,22 +195,15 @@ def most_points_scored
 end
 
 def player_with_longest_name
+  longest_names = []
   game_hash.each_value { |team| 
-    longest = nil
-    
-    if !longest
-      longest = team[:players].max_by { |player|
+  longest_names << team[:players].max_by { |player|
         player[:player_name].length
       }[:player_name]
-    elsif longest.length < team[:players].max_by { |player|
-        player[:player_name].length
-      }[:player_name].length
-      longest = team[:players].max_by { |player|
-        player[:player_name].length
-      }[:player_name]
-    end
   }
-  longest
+  longest_names.max { |name|
+    
+  }
 end
 
 player_with_longest_name
