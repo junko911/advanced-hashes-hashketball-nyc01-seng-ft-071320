@@ -191,7 +191,7 @@ def biggest_num(data_to_compare, data_to_return)
   result = nil
   
   game_hash.each_value { |team|
-    team[players].each { |player|
+    team[:players].each { |player|
       if player[data_to_compare] > biggest
         biggest = player[data_to_compare]
         result = player[data_to_return]
