@@ -213,7 +213,7 @@ def winning_team
   puts team
 end
 
-puts winning_team
+winning_team
 
 def player_with_longest_name
   longest_names = []
