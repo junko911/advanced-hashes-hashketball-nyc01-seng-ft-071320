@@ -194,6 +194,8 @@ def most_points_scored
   biggest_num(:points, :player_name)
 end
 
-puts most_points_scored
+def player_with_longest_name
+  
+end
 
 # binding.pry
