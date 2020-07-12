@@ -195,7 +195,9 @@ def most_points_scored
 end
 
 def player_with_longest_name
-  
+  home_longest = game_hash[:home][players].max { |player|
+    player[:player_name].length
+  }
 end
 
 # binding.pry
