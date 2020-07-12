@@ -194,6 +194,11 @@ def most_points_scored
   biggest_num(:points, :player_name)
 end
 
+def winning_team
+  
+end
+
+
 def player_with_longest_name
   longest_names = []
   game_hash.each_value { |team| 
@@ -205,7 +210,5 @@ def player_with_longest_name
     name1.length <=> name2.length    
   }
 end
-
-puts player_with_longest_name
 
 # binding.pry
