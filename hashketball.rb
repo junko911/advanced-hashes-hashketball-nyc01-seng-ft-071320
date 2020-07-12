@@ -196,7 +196,7 @@ end
 
 def winning_team
   biggest = 0
-  team = ""
+  winning_team = ""
   
   game_hash.each_value { |team|
   
@@ -208,11 +208,11 @@ def winning_team
     
     if points > biggest
       biggest = points
-      team = team[:team_name]
+      winning_team = team[:team_name]
     end
   }
   
-  puts team
+  puts winning_team
 end
 
 winning_team
