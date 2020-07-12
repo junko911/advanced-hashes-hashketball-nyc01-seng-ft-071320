@@ -171,21 +171,6 @@ def player_numbers(name)
   numbers
 end
 
-def big_shoe_rebounds
-  big_shoe_size = 0
-  rebounds = 0
-  
-  game_hash.each_value { |team|
-    team[:players].each { |player|
-      if player[:shoe] > big_shoe_size
-        big_shoe_size = player[:shoe]
-        rebounds = player[:rebounds]
-      end
-    }
-  }
-  rebounds
-end
-
 def biggest_num(data_to_compare, data_to_return)
   biggest = 0
   result = nil
@@ -200,7 +185,20 @@ def biggest_num(data_to_compare, data_to_return)
   }
   result
 end
-puts big_shoe_rebounds
-puts biggest_num(:shoe, :rebounds)
+
+def big_shoe_rebounds
+  # big_shoe_size = 0
+  # rebounds = 0
+  
+  # game_hash.each_value { |team|
+  #   team[:players].each { |player|
+  #     if player[:shoe] > big_shoe_size
+  #       big_shoe_size = player[:shoe]
+  #       rebounds = player[:rebounds]
+  #     end
+  #   }
+  # }
+  # rebounds
+end
 
 # binding.pry
