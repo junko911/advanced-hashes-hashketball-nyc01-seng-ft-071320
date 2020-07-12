@@ -201,8 +201,8 @@ def player_with_longest_name
         player[:player_name].length
       }[:player_name]
   }
-  longest_names.max { |name|
-    
+  longest_names.max { |name1, name2|
+    name1    
   }
 end
 
