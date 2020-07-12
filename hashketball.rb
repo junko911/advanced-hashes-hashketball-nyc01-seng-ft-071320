@@ -201,6 +201,6 @@ def biggest_num(data_to_compare, data_to_return)
   result
 end
 
-biggest_num(:shoe, :rebounds)
+puts biggest_num(:shoe, :rebounds)
 
 # binding.pry
