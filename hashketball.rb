@@ -190,4 +190,8 @@ def big_shoe_rebounds
   biggest_num(:shoe, :rebounds)
 end
 
+def most_points_scored
+  biggest_num(:points, :player_name)
+end
+
 # binding.pry
