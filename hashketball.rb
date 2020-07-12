@@ -186,4 +186,20 @@ def big_shoe_rebounds
   rebounds
 end
 
+def biggest_num(data_to_compare, data_to_return)
+  biggest = 0
+  result = nil
+  
+  game_hash.each_value { |team|
+    team[players].each { |player|
+      if player[data_to_compare] > biggest
+        biggest = player[data_to_compare]
+        result = player[data_to_return]
+      end
+    }
+  }
+  result
+end
+
+
 # binding.pry
