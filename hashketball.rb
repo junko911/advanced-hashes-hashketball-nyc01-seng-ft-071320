@@ -204,6 +204,8 @@ def winning_team
       sum + player[:points]    
     }
     
+    puts points
+    
     if points > biggest
       biggest = points
       team = team[:team_name]
