@@ -204,18 +204,14 @@ def winning_team
       sum + player[:points]    
     }
     
-    puts points
-    
     if points > biggest
       biggest = points
       winning_team = team[:team_name]
     end
   }
   
-  puts winning_team
+  winning_team
 end
-
-winning_team
 
 def player_with_longest_name
   longest_names = []
