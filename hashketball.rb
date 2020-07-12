@@ -225,4 +225,9 @@ def player_with_longest_name
   }
 end
 
+def longest_name_steals_a_ton?
+  player_with_longest_name == biggest_num(:steals, :player_name) ? true : false
+end
+
+
 # binding.pry
